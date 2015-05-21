@@ -53,6 +53,7 @@ public class Customer {
 
 			}
 			else if((i >= 50) && (i < 68))
+				//hello
 			{
 				if(generator.nextInt(2) == 0)
 				{
