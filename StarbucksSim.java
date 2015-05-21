@@ -15,7 +15,7 @@ public class StarbucksSim {
 //			}
 		}
 //print every 20 customers then the total at the end.
-		int rounds = 10;
+		int rounds = 1;
 		for (int j = 0; j < rounds; j++) {
 			for (Customer c : customers) {
 				c.placeOrder(star);
