@@ -25,6 +25,7 @@ public class Customer {
 		customers = new int[2][100];
 
 		for(int i = 0; i < 100; i++)
+
 		{
 			customers[0][i] = i;
 
@@ -35,75 +36,65 @@ public class Customer {
 					//1 is buy
 					//0 is not buy
 					customers[0][i] = customers[1][i];
+					System.out.println("coffee");
 				}
-				
-//				else {
-//					customers [0][i] = 0;
-//				}
-			}
-			else if((i >= 25) && (i < 50))
-			{
-				if(generator.nextInt(10) == 0)
-				{
-					customers[0][i] = customers[1][i];
-				}
-//				else {
-//					customers [0][i] = 0;
-//				}
 
 			}
-			else if((i >= 50) && (i < 68))
-				//hello
-			{
-				if(generator.nextInt(2) == 0)
-				{
-					customers[0][i] = customers[1][i];
-				}
-//				else {
-//					customers [0][i] = 0;
-				//hey lily
+//			else if((i >= 25) && (i < 50))
+//			{
+//				if(generator.nextInt(10) == 0)
+//				{
+//					customers[0][i] = customers[1][i];
 //				}
-			}
-			else if((i >= 68) && (i < 80))
-			{
-				if(generator.nextInt(4) == 0 || generator.nextInt(4) == 1 || generator.nextInt(4) == 2)
-				{
-					customers[0][i] = customers[1][i];
-				}
-//				else {
-//					customers [0][i] = 0;
+//
+//			}
+//			else if((i >= 50) && (i < 68))
+//			{
+//				if(generator.nextInt(2) == 0)
+//				{
+//					customers[0][i] = customers[1][i];
 //				}
-			}
-			else if((i >= 80) && (i < 92))
-			{
-				customers[0][i] = customers[1][i];
-			}
-			else if((i >= 92) && (i < 96))
-			{
-				customers[0][i] = customers[1][i];
-			}
-			else if((i >= 96) && (i <= 100))
-			{
-				customers[0][i] = customers[1][i];
-			}
+//
+//			}
+//			else if((i >= 68) && (i < 80))
+//			{
+//				if(generator.nextInt(4) == 0 || generator.nextInt(4) == 1 || generator.nextInt(4) == 2)
+//				{
+//					customers[0][i] = customers[1][i];
+//				}
+//			}
+//			else if((i >= 80) && (i < 92))
+//			{
+//				customers[0][i] = customers[1][i];
+//			}
+//			else if((i >= 92) && (i < 96))
+//			{
+//				customers[0][i] = customers[1][i];
+//			}
+//			else if((i >= 96) && (i <= 100))
+//			{
+//				customers[0][i] = customers[1][i];
+//			}
 
-			for(int row = 0; row < 2; row++){
-				for (int col = 0; col < 100; col++)
-				{
-					System.out.println(customers[row][col]);
-				}
-			}
 		}
+		
+//		for(int row = 0; row < 1; row++){
+//			for (int col = 0; col < 100; col++)
+//			{
+//				System.out.println(customers[row][col]);
+//			}
+//		}
+
 
 
 
 		//add money to total paid
-				this.totalPaid = s.menu.get(whichItem).price.get(whichSize);
-				
+		this.totalPaid = s.menu.get(whichItem).price.get(whichSize);
+
 
 		//return product to be placed
-				
-				return null;
+
+		return null;
 
 	}
 
