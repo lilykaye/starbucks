@@ -17,6 +17,7 @@ public class Customer {
 		//pick product from the store's menu
 		int whichItem;
 		int whichSize;
+		int x = 0;
 
 		whichItem = generator.nextInt(s.menu.size());
 		whichSize = generator.nextInt(s.price.size());
@@ -31,7 +32,7 @@ public class Customer {
 
 			if(i < 25)
 			{
-				if(generator.nextInt(100) == 0)
+				if(generator.nextInt(x) == 0)
 				{
 					//1 is buy
 					//0 is not buy
@@ -45,7 +46,7 @@ public class Customer {
 			}
 			if((i >= 25) && (i < 50))
 			{
-				if(generator.nextInt(10) == 0)
+				if(generator.nextInt(x) == 0)
 				{
 					customers[0][i] = 1;
 				}
@@ -57,7 +58,7 @@ public class Customer {
 			}
 			if((i >= 50) && (i < 68))
 			{
-				if(generator.nextInt(2) == 0)
+				if(generator.nextInt(x) == 0)
 				{
 					customers[0][i] = 1;
 				}
@@ -69,7 +70,7 @@ public class Customer {
 			}
 			if((i >= 68) && (i < 80))
 			{
-				if(generator.nextInt(4) == 0 || generator.nextInt(4) == 1 || generator.nextInt(4) == 2)
+				if(generator.nextInt(x) == 0)
 				{
 					customers[0][i] = 1;
 				}
@@ -80,31 +81,48 @@ public class Customer {
 			}
 			if((i >= 80) && (i < 92))
 			{
-				customers[0][i] = 1;
+				
+				if(generator.nextInt(x) == 0)
+				{
+					customers[0][i] = 1;
+				}
+				
+				else {
+					customers[0][i] = 0;
+				}
 
 			}
 			if((i >= 92) && (i < 96))
 			{
-				customers[0][i] = 1;
+				
+				if(generator.nextInt(x) == 0)
+				{
+					customers[0][i] = 1;
+				}
+				
+				else {
+					customers[0][i] = 0;
+				}
 
 			}
 			if((i >= 96) && (i <= 100))
 			{
-				customers[0][i] = 1;
+				if(generator.nextInt(x) == 0)
+				{
+					customers[0][i] = 1;
+				}
+				
+				else {
+					customers[0][i] = 0;
+				}
 
 			}
-
 		}
 
-		//for(int row = 0; row < 2; row++){
 		for (int col = 0; col < 100; col++)
 		{
 			System.out.println(customers[0][col]);
 		}
-		//}
-
-
-
 
 		//add money to total paid
 		this.totalPaid = s.menu.get(whichItem).price.get(whichSize);

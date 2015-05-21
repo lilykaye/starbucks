@@ -18,7 +18,7 @@ public class Product {
 	public Product(String name, List<Integer> price, List<Integer> cost)
 	{
 		
-		System.out.println("21: " + price.get(0).intValue());
+//		System.out.println("21: " + price.get(0).intValue());
 		
 		
 		
@@ -27,7 +27,7 @@ public class Product {
 	this.price = price;
 	this.cost = cost;
 	
-	System.out.println(cost.get(0).toString());
+//	System.out.println(cost.get(0).toString());
 	
 	}
 			
