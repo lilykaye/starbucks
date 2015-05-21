@@ -61,6 +61,7 @@ public class Customer {
 				}
 //				else {
 //					customers [0][i] = 0;
+				//hey lily
 //				}
 			}
 			else if((i >= 68) && (i < 80))
